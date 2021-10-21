@@ -1,6 +1,8 @@
 function dontCarry(param1, param2) {
-  let p1 = param1.toString().split(""), p2 = param2.toString().split("");
-  let longest = null, shortest = null;
+  let p1 = param1.toString().split("");
+  let p2 = param2.toString().split("");
+  let longest = null;
+  let shortest = null;
 
   if (p1.length < p2.length) {
     shortest = p1;
@@ -15,7 +17,8 @@ function dontCarry(param1, param2) {
 
   for (let i = 0; i < diff; i++) shortest.unshift("0");
   
-  let i = 0, sum = 0;
+  let i = 0;
+  let sum = 0;
 
   while (i < longest.length) {
     let s = (+shortest[i] + +longest[i]).toString();
