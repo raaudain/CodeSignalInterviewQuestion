@@ -30,4 +30,4 @@ function dontCarry(param1, param2) {
 }
 
 
-dontCarry(9999, 999)
+dontCarry(9999, 9999)
